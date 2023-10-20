@@ -12,12 +12,12 @@ namespace Tyuiu.ShadrinEA.Sprint3.Task0.V18.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sumSeries = 0;
+            double sumSeries = 1;
             int i;
 
             for (i = startValue; i <= stopValue; i++) ;
             {
-                sumSeries = sumSeries + (Math.Pow((2 / (Math.Cos(value) + 5.0)), i));
+                sumSeries = sumSeries * (Math.Pow((2 / (Math.Cos(value) + 5.0)), i));
 
             }
             return Math.Round(sumSeries, 3);
